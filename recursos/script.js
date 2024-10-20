@@ -1,6 +1,8 @@
-function sendMessage() {
-    const message = "Parabéns pelos 19 anos! 🎉 Que seu ano seja tão incrível quanto você!";
-    const whatsappURL = `https://wa.me/?text=${encodeURIComponent(message)}`;
-    window.open(whatsappURL, '_blank');
+document.getElementById("presente").addEventListener("click", function(){
+  var mensagem = document.getElementById("mensagem");
+  if (mensagem.style.display === "none"){
+    mensagem.style.display = "block";
+  } else {
+    mensagem.style.display = "none";
   }
-  
+});
